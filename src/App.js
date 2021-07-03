@@ -1,21 +1,21 @@
-import React, { useState } from "react"
-import Nav from './components/Nav'
-import About from './components/About'
-import Contact from './components/Contact'
-import Resume from "./components/Resume"
+import React from 'react';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <Nav></Nav>
-      <main>
-
-            <About></About>
-            <Resume></Resume>
-            <Contact></Contact>
-      </main>
+    <div>
+      <section>
+        <Header></Header>
+      </section>
+      
+      <section>
+        <Footer></Footer>
+      </section>
     </div>
-  );
-}
 
+
+  );
+
+}
 export default App;
