@@ -1,12 +1,12 @@
-import React from 'react';
+// import React from 'react';
 
 
-function Contact () {
-    return (
-        // insert contact here
-    );
-}
+// function Contact () {
+//     // return (
+//     //     // insert contact here
+//     // );
+// }
 
 
 
-export default Contact
+// export default Contact
