@@ -6,7 +6,7 @@ function About () {
     
     return (
         <section>
-            <h2>About Me</h2>
+            <h2 id="about">About Me</h2>
             <div>
                 <img alt="Casey Arrington"></img>
                 <p>
