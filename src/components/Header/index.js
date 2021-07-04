@@ -1,12 +1,15 @@
 import React from 'react';
-import { Header } from 'grommet'
+import { Header, Heading } from 'grommet'
 import Nav from '../Nav';
 
-function HeaderComp() {
+function HeaderComp(props) {
     return (
         <Header>
-            <h1>Casey Arrington</h1>
-            <Nav></Nav>
+            <Heading level="1">Casey Arrington</Heading>
+            <Nav
+                currentPage={props.currentPage}
+                handlePageChange={props.handlePageChange} 
+            />
         </Header>
     )
 };

@@ -3,7 +3,7 @@ import React from 'react';
 
 function Resume () {
     return (
-        // insert contact here
+        <h2 id="resume">Resume</h2>
     );
 }
 

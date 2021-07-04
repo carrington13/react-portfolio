@@ -1,16 +1,33 @@
 import React from 'react';
 import { Nav, Anchor } from 'grommet'
-//import { Github, Linkedin, Facebook } from 'grommet-icons';
 
-
-
-function Navigation () {
+/* Changes TODO: 
+    Make it so anchors are dynamically created to DRY up the code
+    Add an array with each page <name> 
+*/
+function Navigation(props) {
     return (
         <Nav direction="row" background="brand" pad="medium">
-            <Anchor href="#about" label="About" />
-            <Anchor href="#portfolio" label="Portfolio" />
-            <Anchor href="#resume" label="Resume" />
-            <Anchor href="#contact" label="Contact Me" />
+            <Anchor href="#about" label="About" 
+                 onClick={()=> {
+                props.handlePageChange('About')
+                }} 
+            />
+            <Anchor href="#portfolio" label="Portfolio" 
+                 onClick={()=> {
+                props.handlePageChange('Portfolio')
+                 }} 
+            />
+            <Anchor href="#resume" label="Resume"
+                 onClick={()=> {
+                props.handlePageChange('Resume')
+                 }} 
+            />
+            <Anchor href="#contact" label="Contact Me"
+                 onClick={()=> {
+                props.handlePageChange('Contact')
+                }}
+            /> 
         </Nav>
     );
 }
