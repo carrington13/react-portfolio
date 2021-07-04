@@ -1,38 +1,18 @@
 import React from 'react';
+import { Nav } from 'grommet'
+//import { Github, Linkedin, Facebook } from 'grommet-icons';
 
 
 
-function Nav () {
+function Navigation () {
     return (
-        <nav>
-        <ul>
-            <li>
-                <a href="#about">
-                    About Me
-                </a>
-            </li>
-            <li>
-                <a href="#portfolio">
-                    Projects
-                </a>
-            </li>
-            <li>
-                <a href="#contact">
-                    Contact
-                </a>
-            </li>
-            <li>
-                <a href="#resume">
-                    Resume
-                </a>
-            </li>
-            
-        </ul>
-    </nav>
+        <Nav direction="row" background="brand" pad="medium">
+
+        </Nav>
 
     );
 }
 
 
 
-export default Nav
+export default Navigation

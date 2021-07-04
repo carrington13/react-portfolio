@@ -1,18 +1,14 @@
 import React from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
-
+import { Grommet } from 'grommet'
+import HeaderComp from './components/Header';
+import FooterComp from './components/Footer';
+//import About from './components/About'
 function App() {
   return (
-    <div>
-      <section>
-        <Header></Header>
-      </section>
-        
-      <section>
-        <Footer></Footer>
-      </section>
-    </div>
+    <Grommet>
+      <HeaderComp></HeaderComp>
+      <FooterComp></FooterComp>
+    </Grommet>
 
 
   );

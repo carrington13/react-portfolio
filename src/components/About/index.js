@@ -2,7 +2,7 @@ import React from 'react';
 
 
 function About () {
-    const techArr = ['HTML', 'CSS','JS', 'Node.js', 'Express.js', 'React.js', 'MongoDB', 'MySql', 'M-V-C', 'GraphQL', 'RESTful API', 'OOP', 'ORM', 'PWA', 'Bootstrap', 'NoSQL', 'SQL', 'and various other libraries and frameworks' ]
+    //const techArr = ['HTML', 'CSS','JS', 'Node.js', 'Express.js', 'React.js', 'MongoDB', 'MySql', 'M-V-C', 'GraphQL', 'RESTful API', 'OOP', 'ORM', 'PWA', 'Bootstrap', 'NoSQL', 'SQL', 'and various other libraries and frameworks' ]
     
     return (
         <section>
@@ -20,11 +20,8 @@ function About () {
                 </p>
             </div>
             <div>
-                <h3>Skills:</h3>
+                <h3>Technical Skills:</h3>
                 <ul>
-                    {techArr.forEach((element) => {
-                        <li>{element}</li>
-                    })}
                 </ul>
             </div>
         </section>

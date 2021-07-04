@@ -1,13 +1,14 @@
 import React from 'react';
+import { Header } from 'grommet'
 import Nav from '../Nav';
 
-function Header() {
+function HeaderComp() {
     return (
-        <header>
+        <Header>
             <h1>Casey Arrington</h1>
             <Nav></Nav>
-        </header>
+        </Header>
     )
 };
 
-export default Header
+export default HeaderComp
