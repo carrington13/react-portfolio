@@ -1,11 +1,14 @@
 import React from 'react'
-//import Project from '../Project'
+import Project from '../Project'
+import { Box, Carousel } from 'grommet'
 
 function Portfolio() {
     return (
-        <div>
-            <h2 id="portfolio">Portfolio</h2>
-        </div>
+        <Box height="large" width="large" overflow="hidden">
+            <Carousel fill>
+                <Project></Project>
+            </Carousel>
+        </Box>
     )
 }
 
