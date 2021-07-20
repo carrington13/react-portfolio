@@ -6,6 +6,7 @@ import { Nav, Anchor } from 'grommet'
     Add an array with each page <name> 
 */
 function Navigation(props) {
+
     return (
         <Nav direction="row" background="brand" pad="medium">
             <Anchor href="#about" label="About" 

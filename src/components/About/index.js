@@ -1,5 +1,5 @@
 import React from 'react';
-//import { Box, Heading, Paragraph } from 'grommet'
+import { Accordion, AccordionPanel, Box, Image} from 'grommet'
 
 
 function About () {
@@ -8,6 +8,8 @@ function About () {
     return (
         <section>
             <h2 id="about">About Me</h2>
+            <Accordion multiple="true">
+                <AccordionPanel label="Personal" animate="true">
             <div>
                 <img alt="Casey Arrington"></img>
                 <p>
@@ -20,11 +22,16 @@ function About () {
                     Curabitur imperdiet ultricies mollis. In hac habitasse platea dictumst.
                 </p>
             </div>
+                </AccordionPanel>
+                <AccordionPanel label="Professional" animate="true"></AccordionPanel>
+                <AccordionPanel label="Skills" animate="true">
             <div>
                 <h3>Technical Skills:</h3>
                 <ul>
                 </ul>
             </div>
+                </AccordionPanel>
+            </Accordion>
         </section>
     );
 }

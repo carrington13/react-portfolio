@@ -1,9 +1,9 @@
 :root {
-    --primary: #497573;
-    --secondary: #99f7f2;
-    --tertiary: #b2c2c1;
-    --quatrinary: #cadbda;
-    --light: #e1f5f4;
+    --primary: #A33B20;
+    --secondary: #385F71;
+    --tertiary: #1C0F13;
+    --quatrinary: #E57A44;
+    --light: #F5F0F6;
     --dark: #6c7575;
     --error: rgb(228, 46, 1);
     --border-radius: 0.3rem;
@@ -257,6 +257,35 @@
     display: inline;
   }
   
+  /* .footer{
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: rgb(235, 195, 64);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  } */
+
+  .portrait {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+}
+
+.portrait img {
+    height: 200px;
+    width: 200px;
+    float: right;
+    border-radius: 100px;
+    border: solid 5px var(--orange);
+    margin: 0px 40px;
+    transition: transform .5s ease;
+}
+
   /* HEIGHT / WIDTH UTILS */
   .w-100 {
     width: 100%;

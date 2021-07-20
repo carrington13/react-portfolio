@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Box, CardHeader, CardBody, CardFooter, Button } from 'grommet';
+import { Card, Box, CardHeader, CardBody, CardFooter, Anchor } from 'grommet';
 //import { Github } from 'grommet-icons'
 
 
@@ -47,16 +47,12 @@ function Project() {
         <Box>
         {
             projects.map(project => (
-                <Card>
+                <Card key={project.name}>
                     <CardHeader pad="medium">{project.name}</CardHeader>
                     <CardBody>{project.description}</CardBody>
                     <CardFooter>
-                        <Button>
-
-                        </Button>
-                        <Button>
-                            
-                        </Button>
+                        <Anchor href={project.repoUrl} target="_blank" >GitHub Repo</Anchor>
+                        <Anchor href={project.deployedUrl} target="_blank">Deployed App</Anchor>
                     </CardFooter>
                 </Card>
             ))

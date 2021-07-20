@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+//import emailjs from 'emailjs-com';
 
 
 function Contact () {
@@ -15,12 +16,21 @@ function Contact () {
         });
     };
 
+    // Add emailjs-com for form functionality
+    // https://www.emailjs.com/docs/examples/reactjs/
     const handleFormSubmit = async event => {
         event.preventDefault();
+      // service name = Gmail, serviceid=service_qyrln3k, template id = template_cut1itu
+        // emailjs.sendForm('service_qyrln3k', 'template_cut1itu', event.target, 'user_6FZFUHcR321tuT9EQn8es')
+        //   .then((result) => {
+        //     console.log(result.text);
+        //   }, (error) => {
+        //     console.log(error.text);
+        //   })
         setFormState({name: '', email: '', message: ''})
     }
     return (
-        <main className="flex-row justify-center mb-4">
+        <div className="flex-row justify-center mb-4">
         <div className="col-12 col-md-6">
           <div className="card">
             <h4 className="card-header">Contact me!</h4>
@@ -32,7 +42,7 @@ function Contact () {
                   name="name"
                   type="name"
                   id="name"
-                  value={formState.username}
+                  value={formState.name}
                   onChange={handleChange}
                 />
                 <input
@@ -56,11 +66,21 @@ function Contact () {
                   Submit
                 </button>
               </form>
+            {/* <form className="contact-form" onSubmit={handleFormSubmit}>
+              <input type="hidden" name="contact_number" />
+              <label>Name</label>
+              <input type="text" name="user_name" />
+              <label>Email</label>
+              <input type="email" name="user_email" />
+              <label>Message</label>
+              <textarea name="message" />
+              <input type="submit" value="Send" />
+            </form> */}
   
             </div>
           </div>
         </div>
-      </main>
+      </div>
 
     );
 }
