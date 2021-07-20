@@ -1,4 +1,4 @@
-.footer{
+.footer {
     margin-top: 1rem;
     padding: 1rem;
     background-color: #A33B20;
@@ -7,4 +7,5 @@
     left: 0;
     width: 100%;
     color: #F5F0F6;
+    border-top: 5px solid #1C0f13;
   }

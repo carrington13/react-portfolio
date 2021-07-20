@@ -1,0 +1,8 @@
+.anchor:hover, .anchor:focus, .anchor:active {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 25px;
+    color: #1C0F13;
+
+}

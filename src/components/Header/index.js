@@ -1,14 +1,13 @@
 import React from 'react';
 import { Header, Heading } from 'grommet'
 import Nav from '../Nav';
-import portait from '../../assets/images/portrait-small.jpg'
+//import portait from '../../assets/images/portrait-small.jpg'
+import './style.css';
+
 function HeaderComp(props) {
     return (
-        <Header>
-            <div className="portait">
-                <img src={portait} alt="Casey's portrait"/>
-            </div>
-            <Heading level="1">Casey Arrington</Heading>
+        <Header className="header">
+            <Heading level="1" className="title">Casey Arrington</Heading>
             <Nav
                 currentPage={props.currentPage}
                 handlePageChange={props.handlePageChange} 

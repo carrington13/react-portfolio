@@ -1,5 +1,6 @@
 import React from 'react';
-import { Nav, Anchor } from 'grommet'
+import { Nav, Anchor } from 'grommet';
+import './style.css';
 
 /* Changes TODO: 
     Make it so anchors are dynamically created to DRY up the code
@@ -8,23 +9,23 @@ import { Nav, Anchor } from 'grommet'
 function Navigation(props) {
 
     return (
-        <Nav direction="row" background="brand" pad="medium">
-            <Anchor href="#about" label="About" 
+        <Nav direction="row" pad="medium">
+            <Anchor size="large" className="anchor" href="#about" label="About" 
                  onClick={()=> {
                 props.handlePageChange('About')
                 }} 
             />
-            <Anchor href="#portfolio" label="Portfolio" 
+            <Anchor size="large" className="anchor" href="#portfolio" label="Portfolio" 
                  onClick={()=> {
                 props.handlePageChange('Portfolio')
                  }} 
             />
-            <Anchor href="#resume" label="Resume"
+            <Anchor size="large" href="#resume" className="anchor" label="Resume"
                  onClick={()=> {
                 props.handlePageChange('Resume')
                  }} 
             />
-            <Anchor href="#contact" label="Contact Me"
+            <Anchor size="large" href="#contact" className="anchor" label="Contact Me"
                  onClick={()=> {
                 props.handlePageChange('Contact')
                 }}

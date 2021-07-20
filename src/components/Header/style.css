@@ -1,0 +1,12 @@
+.header {
+        background-color: #A33B20;
+        color: #F5F0F6;
+        width: 100%;
+        height: auto;
+        border-top: 5px solid #1C0F13;
+        border-bottom: 5px solid #1C0F13;
+}
+
+.title {
+    margin-left: 10px;
+}
