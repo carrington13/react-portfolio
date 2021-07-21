@@ -1,5 +1,5 @@
 import React from 'react';
-import { Accordion, AccordionPanel, Box, Image} from 'grommet'
+import { Accordion, AccordionPanel} from 'grommet'
 
 
 function About () {
@@ -8,7 +8,7 @@ function About () {
     return (
         <section>
             <h2 id="about">About Me</h2>
-            <Accordion multiple="true">
+            <Accordion>
                 <AccordionPanel label="Personal" animate="true">
             <div>
                 <img alt="Casey Arrington"></img>

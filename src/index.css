@@ -1,10 +1,10 @@
 :root {
     --primary: #A33B20;
-    --secondary: #385F71;
+    --secondary: #081318;
     --tertiary: #1C0F13;
     --quatrinary: #E57A44;
     --light: #F5F0F6;
-    --dark: #6c7575;
+    --dark: #dde0e0;
     --error: rgb(228, 46, 1);
     --border-radius: 0.3rem;
     --spacing-one: calc(1rem * 0.25);
@@ -30,8 +30,8 @@
     font-weight: 400;
     line-height: 1.5;
     font-size: 20px;
-    color: var(--dark);
-    background-color: #f3fffee1;
+    color: var(--light);
+    background-color: var(--dark);
   }
   
   h1,
@@ -117,14 +117,15 @@
     border: none;
     color: var(--dark);
     outline: none;
-    background-color: var(--secondary);
+    background-color: var(--secondary
+    );
     transition: all 0.5s;
   }
   
   .btn:hover,
   .pill:hover {
     color: var(--secondary);
-    background-color: var(--dark);
+    background-color: var(--primary);
   }
   
   .btn-inline {
@@ -168,7 +169,7 @@
   .form-input {
     width: 100%;
     padding: 0.75rem;
-    margin: 0.2rem 0;
+    margin: 1rem 0;
     font-size: 1.2rem;
     border: 2px solid var(--dark);
     border-radius: var(--border-radius);
