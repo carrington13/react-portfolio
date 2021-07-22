@@ -91,19 +91,11 @@ function Resume () {
                                 </div>
                             </div>
                         </div>
-                        <div className="interests">
-                            <h4>INTERESTS</h4>
-                            <div className="card">
-                                <div className="card-body">
-                                    <p>Casey is a full-stack web developer that is proficient with many technologies and frameworks.</p>
-                                </div>    
-                            </div>
-                        </div>
                     </div>
                 </div>
 
                 <div className="downloadResumeLink">
-                    <a download href="">Download My Resume</a>
+                    <a download href="https://docs.google.com/document/d/1bJej6NhTFt-ky6IrhcX1pYPoLg2usUggJWqJjt9HdNc/edit?usp=sharing">Download My Resume</a>
                 </div>
             </div>
         </section>

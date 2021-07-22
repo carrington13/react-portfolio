@@ -66,7 +66,11 @@
 .downloadResumeLink {
     float: right;
     margin-top: 2rem;
-    font-size: 1.25em 
+    font-size: 1.25em;
+}
+
+.downloadResumeLink a{
+    color: #1C0F1C
 }
 .downloadResumeLink a:hover {
     color: #A33B20;
