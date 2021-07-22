@@ -10,12 +10,12 @@
 
 
 ## Deployed GitHub URL
-
+https://carrington13.github.io/react-portfolio/
 
 ## Usage
 
 ### Description
-    My, Casey Arrington's, personal portfolio designed to showcase my personality, coding skills and knowledge to potential future employers. The portfolio is built using React and the React library "Grommet" and contains: an 'About me', a section showing my works that link to the repo and/or deployed app, a contact me that I intend to send me an email but currently will not function as the app is not connected to a back-end, and a downloadable link to my resume.  
+    My personal portfolio designed to introduce myself and showcase my coding skills and knowledge to potential future employers. The portfolio is built using React and the React library "Grommet" and contains: an 'About me', a section showing my works that link to the repo and/or deployed app, a contact me that I intend to send me an email but currently will not function as the app is not connected to a back-end, and a downloadable link to my resume.  
 
 ### Screenshot of Deployed Site
 ![screenshot](./assets/img/screenshot.png)
