@@ -1,0 +1,30 @@
+.bio-text {
+    color: #1C0F13;
+}
+
+.bio-font {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 2.5%;
+    padding: 2em;
+    border: 5px solid hsl(342, 30%, 8%);
+    height: auto;
+ 
+}
+
+.bio-header-container {
+    display: inline;
+    width: 60%;
+    height: auto;
+    display: flex;
+    margin-left: 2.5%;
+    margin-top: 5%;
+    align-items: flex-end;
+}
+
+.bio-heading {
+    align-self: flex-end;
+    /* margin-left: 2.5%; */
+    font-size: 4em;
+    border-bottom: 5px solid #1C0F13;
+}

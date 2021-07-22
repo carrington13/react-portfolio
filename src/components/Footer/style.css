@@ -9,3 +9,30 @@
     color: #F5F0F6;
     border-top: 5px solid #1C0f13;
   }
+
+.portrait-container {
+    display: flex;
+    width:25%;
+    justify-content: flex-start;
+}
+
+.portrait {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    border: solid 5px #E57A44;
+    transition: transform .5s ease;
+    margin: 1rem
+}
+
+@media (pointer: fine) {
+    .portrait:hover {
+        transform: scale(2);
+    }
+}
+
+.footer-copy-div {
+  width: 25%;
+  align-self: center;
+  font-size: 1.5em
+}
