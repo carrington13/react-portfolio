@@ -1,12 +1,14 @@
 import React from 'react'
 import Project from '../Project'
-import { Box } from 'grommet'
+
+import './style.css'
+
 
 function Portfolio() {
     return (
-        <Box height="large" width="large" overflow="hidden" align="center">
-            {[<Project></Project>]}
-        </Box>
+        <div className="flex-row justify-space-around project-container">
+            {<Project></Project>}
+        </div>
     )
 }
 

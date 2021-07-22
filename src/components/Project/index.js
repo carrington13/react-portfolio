@@ -1,7 +1,14 @@
 import React from 'react'
-import { Card, Box, CardHeader, CardBody, CardFooter, Anchor, Image } from 'grommet';
+import { CardBody, CardFooter, Anchor, Image } from 'grommet';
 //import { Github } from 'grommet-icons'
-import motivation from "../../assets/images/project/motivation.jpg"
+import motivationImage from "../../assets/images/project/motivation.jpg";
+import passwordImage from "../../assets/images/project/password-generator.png";
+import budgetImage from '../../assets/images/project/budget-tracker.png'
+import codeImage from '../../assets/images/project/code-quiz.png';
+import horiseonImage from '../../assets/images/project/horiseon.png';
+import blogImage from '../../assets/images/project/tech-blog.png';
+
+import './style.css'
 
 function Project() {
     const projects = [
@@ -10,62 +17,72 @@ function Project() {
             description: "A planner that helps keep you motivated and focused on goals.",
             deployedUrl: "https://johnbanas.github.io/motivation-manager/",
             repoUrl: "https://github.com/JohnBanas/motivation-manager",
-            image: { motivation }
+            image: motivationImage,
+            key:"one"
         },
         {
             name: "Password Generator",
             description: "Generate a password using character sets you choose!",
             deployedUrl: "https://carrington13.github.io/password-generator/",
             repoUrl: "https://github.com/carrington13/password-generator",
-            image: "../../assets/images/project/password-generator.png"
+            image: passwordImage,
+            key:"two"
         },
         {
             name: "Budget Tracker",
             description: "A PWA budgeter for clients to add or subtract income",
             deployedUrl: "https://vast-hamlet-45250.herokuapp.com/",
             repoUrl: "https://github.com/carrington13/budget-tracker",
-            image: "../../assets/images/project/budget-tracker.png"
+            image: budgetImage,
+            key:"three"
         },
         {
             name: "js-code-quiz",
             description: "A short quiz of basic JavaScript",
             deployedUrl: "https://carrington13.github.io/js-code-quiz/",
             repoUrl: "https://github.com/carrington13/js-code-quiz",
-            image: "../../assets/images/project/code-quiz.png"
+            image: codeImage,
+            key: "four"
         },
         {
             name: "Tech Blog",
             description: "A CMS-style blog intended for tech-related posts",
             deployedUrl: "https://safe-sea-79163.herokuapp.com/",
             repoUrl: "https://github.com/carrington13/tech-blog",
-            image: "../../assets/images/project/tech-blog.png"
+            image: blogImage,
+            key: "five"
         },
         {
             name: "Horiseon",
             description: "A front-end landing site(for filler purposes)",
             deployedUrl: "https://carrington13.github.io/horiseon-webpage/",
             repoUrl: "https://github.com/carrington13/horiseon-webpage",
-            image: "../../assets/images/project/horiseon.png"
+            image: horiseonImage,
+            key: "six"
         }
     ];
 
+
     return (
-        
-        <Box>
+        <>
         {
-            projects.map(project => (
-                <Card className="project"key={project.name}>
-                    <Image href={project.image} className="project-img"/>
-                    <CardHeader pad="medium">{project.name}</CardHeader>
-                    <CardBody>{project.description}</CardBody>
+            projects.map((project )=> (
+                <div className="card project-card" style={{backgroundImage: project.image}} key={project.key}>
+                    
+                    <div className="card-header"pad="medium">{project.name}</div>
+                    <CardBody key={project.description}>
+                        <Image alt="Project image" fit="cover" src={project.image} height="150px"/>
+                        {project.description}</CardBody>
                     <CardFooter>
-                        <Anchor href={project.repoUrl} target="_blank" >GitHub Repo</Anchor>
+                        <Anchor href={project.repoUrl}  target="_blank" >GitHub Repo</Anchor>
                         <Anchor href={project.deployedUrl} target="_blank">Deployed App</Anchor>
                     </CardFooter>
-                </Card>
+                </div>
+            
             ))
         }
-        </Box>
+
+        </>
     )
 }
 
