@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css'
-import portrait from '../../assets/images/portrait/portrait-small.jpg'
+
 
 function About () {
     

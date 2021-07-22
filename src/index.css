@@ -133,19 +133,34 @@
     display: inline;
   }
   
+  /* --primary: #A33B20;
+  --secondary: #081318;
+  --tertiary: #1C0F13;
+  --quatrinary: #E57A44;
+  --light: #F5F0F6;
+  --dark: #dde0e0;
+  --error: rgb(228, 46, 1);
+  --border-radius: 0.3rem;
+  --spacing-one: calc(1rem * 0.25);
+  --spacing-two: calc(1rem * 0.5);
+  --spacing-three: 1rem;
+  --spacing-four: calc(1rem * 1.5);
+  --spacing-five: calc(1rem * 3); */
+
   /* CARDS */
+
   .card {
     margin: 0 0 20px 0;
-    border: 3px solid var(--dark);
+    border: 3px solid var(--tertiary);
     border-radius: var(--border-radius);
-    background-color: var(--light);
+    background-color: #3d3b3a;
     color: var(--dark);
   }
   
   .card-header {
     color: var(--secondary);
     margin: 0;
-    background-color: var(--dark);
+    background-color: var(--primary);
     padding: 0.625rem;
     border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
   }

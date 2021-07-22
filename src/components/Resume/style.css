@@ -1,3 +1,74 @@
+/* Resume Style Sheet ------------------------------- */
+
 .resume-container {
-    height: auto
+    margin: 5%;
+    background-color: ivory;
+    color: #1C0F1C;
+    /* border: 5px solid #1C0F13; */
+    box-shadow: 0 1.5em 2em 0 rgba(28, 15, 19, 0.6);
+    height: 100%
+}
+
+/* Resume Header ------------------------------------- */
+
+.resume-header {
+    background-color: #3d3b3a;
+    color: ivory;
+    border: 5px solid ivory;
+}
+
+.resume-header h2 {
+    font-size: 3em;   
+}
+
+/* Resume Internal Components ------------------------ */
+
+.main-body-div {
+    position: relative;
+}
+
+.left-container {
+    width: 25%;
+    border-right: 2px solid #1C0F1C;
+
+}
+
+.right-container {
+    width: 60%;
+}
+.list-container {
+    width: 80%;
+    margin-right: 10%
+}
+
+.list-container h4 {
+    margin-left: 40px;
+    border-bottom: 5px solid #1C0F1C
+}
+
+.experience-container, .education {
+    width: 90%;
+    
+}
+
+
+
+.resume-list {
+    list-style: none;
+    
+}
+
+.resume-list li {
+    border-bottom: 2px solid #1C0F1C;
+    padding-bottom: .5em
+}
+
+.downloadResumeLink {
+    float: right;
+    margin-top: 2rem;
+    font-size: 1.25em 
+}
+.downloadResumeLink a:hover {
+    color: #A33B20;
+    font-size: 1.25em
 }
