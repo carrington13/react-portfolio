@@ -6,7 +6,7 @@ import './style.css';
 
 function HeaderComp(props) {
     return (
-        <Header className="header">
+        <Header className="header flex-row">
             <Heading level="1" className="title">Casey Arrington</Heading>
             <Nav
                 currentPage={props.currentPage}

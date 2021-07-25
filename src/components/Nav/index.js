@@ -10,22 +10,22 @@ function Navigation(props) {
 
     return (
         <Nav direction="row" pad="medium">
-            <Anchor size="large" className="anchor" href="#about" label="About" 
+            <Anchor size="large" className="anchor" href="#about" label="About" color="white"
                  onClick={()=> {
                 props.handlePageChange('About')
                 }} 
             />
-            <Anchor size="large" className="anchor" href="#portfolio" label="Portfolio" 
+            <Anchor size="large" className="anchor" href="#portfolio" label="Portfolio" color="white"
                  onClick={()=> {
                 props.handlePageChange('Portfolio')
                  }} 
             />
-            <Anchor size="large" href="#resume" className="anchor" label="Resume"
+            <Anchor size="large" href="#resume" className="anchor" label="Resume" color="white"
                  onClick={()=> {
                 props.handlePageChange('Resume')
                  }} 
             />
-            <Anchor size="large" href="#contact" className="anchor" label="Contact Me"
+            <Anchor size="large" href="#contact" className="anchor" label="Contact Me" color="white"
                  onClick={()=> {
                 props.handlePageChange('Contact')
                 }}

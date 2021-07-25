@@ -71,11 +71,11 @@ function Project() {
                     
                     <div className="card-header"pad="medium">{project.name}</div>
                     <CardBody key={project.description}>
-                        <Image alt="Project image" fit="cover" src={project.image} height="150px"/>
+                        <Image alt="Project image" fit="fill" src={project.image} height="150px"/>
                         {project.description}</CardBody>
                     <CardFooter>
-                        <Anchor href={project.repoUrl}  target="_blank" >GitHub Repo</Anchor>
-                        <Anchor href={project.deployedUrl} target="_blank">Deployed App</Anchor>
+                        <Anchor href={project.repoUrl}  target="_blank" color="white">GitHub Repo</Anchor>
+                        <Anchor href={project.deployedUrl} target="_blank" color="white">Deployed App</Anchor>
                     </CardFooter>
                 </div>
             
