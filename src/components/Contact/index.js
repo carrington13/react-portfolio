@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-//import emailjs from 'emailjs-com';
+import emailjs from 'emailjs-com';
 
 import { Form, FormField, TextInput, TextArea, Box, Button} from 'grommet';
 import './style.css'
@@ -12,17 +12,18 @@ function Contact () {
 
     // // Add emailjs-com for form functionality
     // // https://www.emailjs.com/docs/examples/reactjs/
-    // const handleFormSubmit = async event => {
-    //     event.preventDefault();
-    //   // service name = Gmail, serviceid=service_qyrln3k, template id = template_cut1itu
-    //     // emailjs.sendForm('service_qyrln3k', 'template_cut1itu', event.target, 'user_6FZFUHcR321tuT9EQn8es')
-    //     //   .then((result) => {
-    //     //     console.log(result.text);
-    //     //   }, (error) => {
-    //     //     console.log(error.text);
-    //     //   })
-    //     setFormState({name: '', email: '', message: ''})
-    //}
+    const handleFormSubmit = async e => {
+        e.preventDefault();
+      // service name = Gmail, serviceid=service_qyrln3k, template id = template_cut1itu
+        emailjs.sendForm('service_qyrln3k', 'template_bwh6bwo', e.target, 'user_6FZFUHcR321tuT9EQn8es')
+          .then((result) => {
+            console.log(result.text);
+          }, (error) => {
+            console.log(error.text);
+          });
+
+        setState({name: '', email: '', message: ''})
+    }
     return (
       <Box pad="large" background="#F5F0F6" className="contact-form"
       border={{color: "#1C0F13", size:"medium", style: "solid", side: "all"}}
@@ -31,7 +32,7 @@ function Contact () {
           value={formState}
           onChange={nextValue => setState(nextValue)}
           onReset={() => setState({name: '', email: '', message: ''})}
-          onSubmit={({ formState }) => {}}
+          onSubmit={handleFormSubmit}
     
           
         >
