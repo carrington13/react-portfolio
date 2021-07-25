@@ -17,8 +17,8 @@
 }
 
 .portrait {
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
     border-radius: 100px;
     border: solid 5px #E57A44;
     transition: transform .5s ease;
