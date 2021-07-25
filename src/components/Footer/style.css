@@ -36,3 +36,10 @@
   align-self: center;
   font-size: 1.5em
 }
+
+
+@media screen and (max-width: 575px) {
+    .portrait {
+        display: none;
+    }
+}
