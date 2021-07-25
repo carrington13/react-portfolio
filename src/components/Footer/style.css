@@ -1,6 +1,6 @@
 .footer {
-    margin-top: 1rem;
-    padding: 1rem;
+    margin-top: .3em;
+    padding: .3em;
     background-color: #A33B20;
     position: fixed;
     bottom: 0;
@@ -22,7 +22,8 @@
     border-radius: 100px;
     border: solid 5px #E57A44;
     transition: transform .5s ease;
-    margin: 1rem
+    margin: 1rem;
+    margin-left: 2rem;
 }
 
 @media (pointer: fine) {
