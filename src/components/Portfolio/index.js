@@ -9,7 +9,7 @@ function Portfolio() {
         <section>
             <div className="flex-row justify-space-between">
                 <div className="portfolio-header-container">
-                    <h2 id="portfolio" className="portfolio-heading">Portfolio</h2>
+                    <h2  className="portfolio-heading">Portfolio</h2>
                 </div>
             </div>
             <div className="flex-row justify-space-around project-container">

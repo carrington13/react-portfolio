@@ -28,7 +28,9 @@ function Contact () {
       <section>
         <div className="flex-row justify-space-between">
           <div className="contact-header-container">
-            <h2 id="contact" className="contact-heading">About Me</h2>
+            <h2 className="contact-heading">
+              Contact Me
+            </h2>
           </div>
         </div>
         <Box pad="large" background="#F5F0F6" className="contact-form"

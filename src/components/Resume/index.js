@@ -8,7 +8,7 @@ function Resume () {
         <section>
             <div className="flex-row justify-space-between">
                 <div className="resume-heading-container">
-                    <h2 id="resume" className="resume-heading">Resume</h2>
+                    <h2 className="resume-heading">Resume</h2>
                     </div>
                 </div>
             <div className="resume-container">
