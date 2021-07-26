@@ -5,7 +5,7 @@ import motivationImage from "../../assets/images/project/motivation.jpg";
 import passwordImage from "../../assets/images/project/password-generator.png";
 import budgetImage from '../../assets/images/project/budget-tracker.png'
 import codeImage from '../../assets/images/project/code-quiz.png';
-import horiseonImage from '../../assets/images/project/horiseon.png';
+import augmentedImage from '../../assets/images/project/augmentedImage.png';
 import blogImage from '../../assets/images/project/tech-blog.png';
 
 import './style.css'
@@ -53,11 +53,11 @@ function Project() {
             key: "five"
         },
         {
-            name: "Horiseon",
-            description: "A front-end landing site(for filler purposes)",
-            deployedUrl: "https://carrington13.github.io/horiseon-webpage/",
-            repoUrl: "https://github.com/carrington13/horiseon-webpage",
-            image: horiseonImage,
+            name: "Augmented Retail",
+            description: "A small e-commerce store that dabbles into augmented reality powered by MERN",
+            deployedUrl: " https://quiet-woodland-22294.herokuapp.com/ ",
+            repoUrl: "https://github.com/joshacross/final-project",
+            image: augmentedImage,
             key: "six"
         }
     ];

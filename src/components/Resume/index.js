@@ -6,10 +6,15 @@ import './style.css';
 function Resume () {
     return (
         <section>
+            <div className="flex-row justify-space-between">
+                <div className="resume-heading-container">
+                    <h2 id="resume" className="resume-heading">Resume</h2>
+                    </div>
+                </div>
             <div className="resume-container">
                 <div className="resume-header flex-column justify-center align-center">
-                    <h2>Casey Arrington</h2>
-                    <h3>Web Developer</h3> 
+                    <h3>Casey Arrington</h3>
+                    <h4>Web Developer</h4> 
                 </div>
                 <div className="main-body-div flex-row justify-space-between">
                     <div className="left-container">

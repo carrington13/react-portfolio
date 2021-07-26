@@ -17,9 +17,26 @@
     border: 5px solid ivory;
 }
 
-.resume-header h2 {
-    font-size: 3em;   
+
+
+.resume-heading-container {
+    display: inline;
+    width: 60%;
+    height: auto;
+    display: flex;
+    margin-left: 2.5%;
+    margin-top: 5%;
+    align-items: flex-end;
 }
+
+.resume-heading {
+    align-self: flex-end;
+    /* margin-left: 2.5%; */
+    font-size: 2.5em;
+    border-bottom: 5px solid #1C0F13;
+    color: #1C0F13;
+}
+
 
 /* Resume Internal Components ------------------------ */
 

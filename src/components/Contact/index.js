@@ -25,35 +25,42 @@ function Contact () {
         setState({name: '', email: '', message: ''})
     }
     return (
-      <Box pad="large" background="#F5F0F6" className="contact-form"
-      border={{color: "#1C0F13", size:"medium", style: "solid", side: "all"}}
-      >
-        <Form
-          value={formState}
-          onChange={nextValue => setState(nextValue)}
-          onReset={() => setState({name: '', email: '', message: ''})}
-          onSubmit={handleFormSubmit}
-    
-          
+      <section>
+        <div className="flex-row justify-space-between">
+          <div className="contact-header-container">
+            <h2 id="contact" className="contact-heading">About Me</h2>
+          </div>
+        </div>
+        <Box pad="large" background="#F5F0F6" className="contact-form"
+        border={{color: "#1C0F13", size:"medium", style: "solid", side: "all"}}
         >
-          <FormField className="formField" name="name" htmlFor="text-input-id" label="Name:" required={true} pad={true} validate={{
-              regexp: new RegExp(/^[a-zA-Z]{1,50}$/), message: "Name must be less than 50 alphabetical characters"}}>
-            <TextInput id="text-input-id" name="name" />
-          </FormField>
-          <FormField className="formField" name="email" htmlFor="text-email-id" label="Email:" required={true} pad={true} validate={{
-              regexp: new RegExp(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/), message: "Please enter a valid email address"}}>
-            <TextInput id="text-email-id" name="email" />
-          </FormField>
-          <FormField className="formField" name="message" htmlFor="text-message-id" label="Message:" required={true} pad={true} validate={{
-              regexp: new RegExp(/^.{1,340}$/), message: "Messages must be shorter than 500 characters"}}>
-            <TextArea  id="text-message-id" name="message" />
-          </FormField>
-          <Box direction="row" gap="medium" className="justify-content-between" >
-            <Button type="submit" primary label="Submit" color="#E57A44"/>
-            <Button type="reset" label="Reset" color="#E57A44"/>
-          </Box>
-        </Form>
-      </Box>
+          <Form
+            value={formState}
+            onChange={nextValue => setState(nextValue)}
+            onReset={() => setState({name: '', email: '', message: ''})}
+            onSubmit={handleFormSubmit}
+      
+            
+          >
+            <FormField className="formField" name="name" htmlFor="text-input-id" label="Name:" required={true} pad={true} validate={{
+                regexp: new RegExp(/^[a-zA-Z]{1,50}$/), message: "Name must be less than 50 alphabetical characters"}}>
+              <TextInput id="text-input-id" name="name" />
+            </FormField>
+            <FormField className="formField" name="email" htmlFor="text-email-id" label="Email:" required={true} pad={true} validate={{
+                regexp: new RegExp(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/), message: "Please enter a valid email address"}}>
+              <TextInput id="text-email-id" name="email" />
+            </FormField>
+            <FormField className="formField" name="message" htmlFor="text-message-id" label="Message:" required={true} pad={true} validate={{
+                regexp: new RegExp(/^.{1,340}$/), message: "Messages must be shorter than 500 characters"}}>
+              <TextArea  id="text-message-id" name="message" />
+            </FormField>
+            <Box direction="row" gap="medium" className="justify-content-between" >
+              <Button type="submit" primary label="Submit" color="#E57A44"/>
+              <Button type="reset" label="Reset" color="#E57A44"/>
+            </Box>
+          </Form>
+        </Box>
+      </section>
     );
 }
 
